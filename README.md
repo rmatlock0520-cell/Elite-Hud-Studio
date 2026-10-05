@@ -1,5 +1,6 @@
 # Elite HUD Studio
 
+[![Latest release](https://img.shields.io/github/v/release/rmatlock0520-cell/Elite-Hud-Studio)](https://github.com/rmatlock0520-cell/Elite-Hud-Studio/releases/latest)
 ![Platform: Windows 10 and 11](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue)
 ![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-green)
 ![Game: Elite Dangerous Odyssey](https://img.shields.io/badge/game-Elite%20Dangerous%20Odyssey-orange)
@@ -28,17 +29,21 @@ Elite HUD Studio is a free, simple color editor for the HUD color files of the [
 
 ## Download
 
-Get the latest version from the [Releases](../../releases/latest) page. There are two downloads; they do the same thing.
+### [Download the latest version here](https://github.com/rmatlock0520-cell/Elite-Hud-Studio/releases/latest)
+
+On that page, pick one of the two zips under **Assets**. They do the same thing.
+
+> **Don't use the green "Code" button** at the top of this page. That downloads the source code (a folder called `Elite-Hud-Studio-main`), which doesn't contain the app.
 
 | Download | What it is | Pick it if |
 |---|---|---|
-| **Elite-HUD-Studio-v1.6.zip** | The browser version. No `.exe` at all: a web page plus one small script, both plain text you can open and read. | You want the least trouble from antivirus. **Recommended.** |
-| **Elite-HUD-Studio-v1.6-app.zip** | The same Studio in its own window (`Elite HUD Studio.exe`). | You prefer a normal app window. |
+| **Elite-HUD-Studio-v1.6.1.zip** | The browser version. No `.exe` at all: a web page plus one small script, both plain text you can open and read. | You want the least trouble from antivirus. **Recommended.** |
+| **Elite-HUD-Studio-v1.6.1-app.zip** | The same Studio in its own window (`Elite HUD Studio.exe`). | You prefer a normal app window. |
 
 ## Quick start
 
 1. Unzip the folder anywhere (outside Documents is best, for example `C:\Games\Elite HUD Studio`).
-2. Double-click **Start HUD Studio.bat** (browser version) or **Start Elite HUD Studio.bat** (app version).
+2. Double-click **Start HUD Studio - Browser version.bat** (browser version) or **Start HUD Studio - App version.bat** (app version).
 3. The first time, Studio checks it found the right Elite Dangerous folder.
 4. Pick your colors: use **Quick Theme** for the fast way, or click any part of the preview to fine-tune it.
 5. Click **Save to game** (Ctrl+S), then press **F11** in Elite, or just start the game.
@@ -86,7 +91,8 @@ If your antivirus blocks it: add the Studio folder as an exception, restore anyt
 | "Color files not found" at the top | The HUD mod isn't installed in the game folder Studio is using. Check the folder on the Setup tab. |
 | Colors don't change in the game | Press F11 in Elite after saving, or restart the game. |
 | "You don't have permission" when saving | Your antivirus is protecting the folder, or the game folder needs administrator rights. Move Studio outside Documents, or run it as administrator once. |
-| The app version won't start | Run **Start Elite HUD Studio.bat**: it says why in red and opens the Logs folder. Or use the browser version. |
+| "Files are missing: Elite HUD Studio.exe" and the folder is called `Elite-Hud-Studio-main` | You downloaded the source code. Get a zip from the [Releases](https://github.com/rmatlock0520-cell/Elite-Hud-Studio/releases/latest) page instead. |
+| The app version won't start | Run **Start HUD Studio - App version.bat**: it says why in red and opens the Logs folder. Or use the browser version. |
 
 Still stuck? [Open an issue](../../issues/new/choose) and attach the report from the Setup tab ("Save a diagnostic report").
 
@@ -106,8 +112,8 @@ Still stuck? [Open an issue](../../issues/new/choose) and attach the report from
 | `app/catalog.json`, `app/defaults.json` | Setting names and default values |
 | `app/img/` | The cockpit pictures used by the preview |
 | `My Themes/` | The bundled themes |
-| `Start HUD Studio.bat` | Starts the browser version |
-| `Start Elite HUD Studio.bat` | Starts the app version and checks that it really started |
+| `Start HUD Studio - Browser version.bat` | Starts the browser version |
+| `Start HUD Studio - App version.bat` | Starts the app version and checks that it really started |
 | `docs/images/` | Screenshots for this page |
 
 ## Building the app yourself

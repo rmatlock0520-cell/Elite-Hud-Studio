@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.1
+
+- The two launchers have clearer names: `Start HUD Studio - Browser version.bat` and `Start HUD Studio - App version.bat`.
+- The app launcher now recognises a source-code download and points to the Releases page.
+
 ## 1.6
 
 - The app version no longer starts PowerShell: the helper that reads and writes the color files is now built into `Elite HUD Studio.exe`.
@@ -20,7 +25,7 @@
 
 ## 1.3
 
-- Pass/fail launcher (`Start Elite HUD Studio.bat`) with a launcher log.
+- Pass/fail launcher (`Start HUD Studio - App version.bat`) with a launcher log.
 - Studio remembers the confirmed game folder.
 
 ## 1.1 - 1.2

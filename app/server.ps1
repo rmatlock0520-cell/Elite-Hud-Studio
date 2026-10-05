@@ -1,7 +1,7 @@
 <#
   Elite HUD Studio - helper
   -------------------------
-  Started by "Start HUD Studio.bat". Runs a tiny web server that only this PC can reach
+  Started by "Start HUD Studio - Browser version.bat". Runs a tiny web server that only this PC can reach
   (http://localhost:47810) so the HUD Studio page can read and save your HUD colour files.
   Uses only what ships with Windows (PowerShell + .NET). Close this window to stop it.
 #>
@@ -606,7 +606,7 @@ function Invoke-Route($ctx) {
       if ($null -eq $result) { Send-Json $ctx ([ordered]@{ ok = $false; error = 'Unknown request.' }) 404 } else { Send-Json $ctx $result }
     } catch {
       $msg = $_.Exception.Message
-      if ($msg -match 'denied') { $msg += ' Windows blocked HUD Studio from changing this file. If Elite is open, close it and try again; if it still fails, right-click "Start HUD Studio.bat" and choose "Run as administrator".' }
+      if ($msg -match 'denied') { $msg += ' Windows blocked HUD Studio from changing this file. If Elite is open, close it and try again; if it still fails, right-click "Start HUD Studio - Browser version.bat" and choose "Run as administrator".' }
       elseif ($msg -match 'being used by another process') { $msg += ' Another program (usually Elite) has this file open. Close it and try again.' }
       Write-Log "Problem: $msg"
       Send-Json $ctx ([ordered]@{ ok = $false; error = $msg }) 500
